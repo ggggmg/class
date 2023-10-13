@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.main-wrap {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+    width: 40%;
+    min-height: 100vh;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #e2bae0;
+}
+
+
+.first:link {
+    color: green;
+}
+
+.first:visited {
+    color: red;
+    /* цвет ссылки, которую уже посетили  */
+}
+
+.second {
+    color: black;
+    text-decoration: none;
+    transition: color ease-in 1s ;
+}
+
+.second:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ease-in - specifies a transition effect with a slow start.
+ ease-out - specifies a transition effect with a slow end.
+  ease-in-out 
+- specifies a transition effect with a slow start and end. */
+
+
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color linear 2s;
+}
+
+.third:hover {
+    background-color: aqua;
+}
+
+.fourth {
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: aqua;
+    border: 5px solid transparent;
+    transition: 1s ease-in-out;
+}
+
+.fourth:hover {
+    border: 5px solid rgb(163, 99, 99);
+    border-top-left-radius: 100% 20px;
+    border-bottom-right-radius: 100% 20px;
+}
+
+.fifth, .fifth-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+    width: 50%;
+    background: #393f47;
+    cursor: pointer;
+    position: relative;
+}
+
+.fifth {
+    overflow: hidden;
+}
+
+.fifth img, .fifth-alt img {
+    width: 50px;
+    height: 50px;
+}
+
+.fifth h6 {
+    color: white;
+}
+
+.fifth-alt h6 {
+    color: #393f47;
+}
+
+.fifth-alt {
+    width: 100%;
+    position: absolute;
+    top: -180px;
+    background: #c8a35f;
+    transition: 2s ease;
+}
+
+.fifth:hover .fifth-alt {
+    top: 0;
+}
+
+input {
+    width: 50%;
+    transition: width 1s ease;
+}
+
+input:focus {
+    width: 100%;
+}
+
+.sixth li:nth-child(odd) {
+    color: red;
+    /* Обращение к нечетным элементам */
+}
+
+.sixth li:nth-child(even) {
+    color: green;
+    /* Обращение к четным элементам */
+}
+
+.sixth li:nth-child(3) {
+    color: blue;
+    /* Обращение к конкретному  элементу по числу */
+}
+
+.seventh li:first-child {
+    color: darkorange;
+}
+
+.seventh li:last-child {
+    color: rgb(57, 184, 31);
+}
+
+
+.react {
+    color: red;
+    font-size: 30px;
+    position: relative;
+}
+
+.react::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 110%;
+    top: 3px;
+    background-color: #393f47;
+}
+
+.react::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 130%;
+    top: 35px;
+    background-color: #30aa55;
+}
+
+
+.burger {
+    width: 55px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: relative;
+}
+
+.burger span::before, .burger span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transition: .5s;
+}
+
+.burger span::before{
+    top: -13px;
+}
+
+.burger span::after {
+    top: 13px;
+}
+
+/* krestik */
+.krestik span::before,
+.krestik span::after {
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.krestik span::before {
+    transform: rotate(45deg);
+}
+
+.krestik span::after{
+    transform: rotate(-45deg);
+}
+.krestik span {
+    background: transparent;
+}
+/* krestik */
+
+
+
+
